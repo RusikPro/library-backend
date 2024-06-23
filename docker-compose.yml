@@ -13,9 +13,9 @@ services:
       - ./library:/library
       - dev-static-data:/vol/web
     command: >
-      sh -c "python manage.py wait_for_db &&
-             python manage.py migrate &&
-             python manage.py runserver 0.0.0.0:8000"
+      sh -c  "python manage.py wait_for_db &&
+              python manage.py migrate &&
+              while true; do sleep 1000; done"
     environment:
       - DB_HOST=db
       - DB_NAME=devdb
