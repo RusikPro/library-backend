@@ -128,4 +128,6 @@ docker-compose exec app python manage.py createsuperuser
 
 ### Stopping the Containers
 To stop the Docker containers, use the following command:
+```sh
 docker-compose down
+```
