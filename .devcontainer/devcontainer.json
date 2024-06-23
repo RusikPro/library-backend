@@ -1,0 +1,26 @@
+// Inside .devcontainer/devcontainer.json
+{
+    "name": "Recipe App API Development",
+    "dockerComposeFile": "../docker-compose-vs-code.yml",
+    "service": "app",
+    "workspaceFolder": "/library",
+    "settings": {
+        "python.pythonPath": "/py/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.formatting.autopep8Path": "/py/bin/autopep8",
+        "python.testing.pytestArgs": [
+            "app"
+        ],
+        "python.testing.unittestEnabled": false,
+        "python.testing.nosetestsEnabled": false,
+        "python.testing.pytestEnabled": true,
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ],
+    // "postCreateCommand": "pip install -r requirements.txt",
+    "shutdownAction": "stopCompose"
+}
