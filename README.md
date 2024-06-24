@@ -124,7 +124,9 @@ docker-compose exec app <command>
 ```
 
 For example, to create a superuser:
+```sh
 docker-compose exec app python manage.py createsuperuser
+```
 
 ### Stopping the Containers
 To stop the Docker containers, use the following command:
