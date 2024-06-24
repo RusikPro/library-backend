@@ -98,7 +98,7 @@ python manage.py runserver 0.0.0.0:8000
 
 ### Directory Structure
 
-- `.devcontainer/` - Development container configuration.
+- `.devcontainer/` - Development container configuration for VS Code.
 - `.dockerignore` - Docker ignore file.
 - `.env.dev.sample` - Sample environment configuration for development.
 - `.env.prod.sample` - Sample environment configuration for production.
